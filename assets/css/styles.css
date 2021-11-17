@@ -1,77 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-    --header-height: 3rem;
-
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color:186; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
-    /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #FFF;
-
-    /*========== Font and typography ==========*/
-    --body-font: "Poppins", sans-serif;
-
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-    --mb-0-25: 0.25rem;
-    --mb-0-5: 0.5rem;
-    --mb-0-75: 0.75rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
-
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000;
+    --hue-color:190; 
 }
 
-/* Font size for large devices */
-@media screen and (min-width: 968px) {
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
-    }
-}
-
-/*========== Variables Dark theme ==========*/
-
-
-/*========== Button Dark/Light ==========*/
-
-
-/*==================== BASE ====================*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -86,7 +18,7 @@ body{
     margin: 0 0 3rem 0;
     font-family:  "Poppins", sans-serif;
     font-size: 0.938rem;
-    background-color: hsl(var(--hue-color), 60%, 99%);
+    background-color: hsl(var(--hue-color), 65%, 95%);
     color: hsl(var(--hue-color), 8%, 15%);
 }
 
@@ -107,7 +39,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-/*==================== REUSABLE CSS CLASSES ====================*/
+
 .section{
     padding: 2rem 0 4rem;
 }
@@ -138,8 +70,6 @@ img{
     gap: 1.5rem;
 }
 
-/*==================== LAYOUT ====================*/
-
 .header{
     width: 100%;
     position: fixed;
@@ -149,7 +79,6 @@ img{
     background-color: hsl(var(--hue-color), 60%, 99%);
 }
 
-/*==================== NAV ====================*/
 .nav{
     max-width: 968px;
     height: 3rem;
@@ -224,18 +153,10 @@ img{
 .nav__close:hover{
     color: hsl(var(--hue-color), 57%, 53%);
 }
-/* show menu */
+
 .show-menu{
     bottom: 0;
 }
-
-/* Active link */
-
-
-/* Change background header */
-
-
-/*==================== HOME ====================*/
 .home__container{
     gap: 1rem;
 }
@@ -314,7 +235,6 @@ img{
     font-size: 1.25rem;
 }
 
-/*==================== BUTTONS ====================*/
 .button{
     display: inline-block;
     background-color: hsl(var(--hue-color), 69%, 61%);
@@ -322,6 +242,7 @@ img{
     padding: 1rem;
     border-radius: .5rem;
     font-weight: 500;
+    margin-top: 1rem;
 }
 
 .button:hover{
@@ -340,7 +261,6 @@ img{
     align-items: center;
 }
 
-/*==================== ABOUT ====================*/
 .about__description{
     text-align: center;
     margin-bottom: 2.5rem;
@@ -369,47 +289,342 @@ img{
     display: flex;
     justify-content: center;
 }
-/*==================== SKILLS ====================*/
 
+.skills__container{
+    row-gap: 0;
+}
 
-/*==================== QUALIFICATION ====================*/
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
 
+.skills__icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: hsl(var(--hue-color), 69%, 61%);
+}
 
-/*==================== SERVICES ====================*/
+.skills__icon{
+    margin-right: 0.75rem;
+}
 
+.skills__title{
+    font-size: 1.125rem;
+}
+.skills__subtitle{
+    font-size: 0.813rem;
+    color: hsl(var(--hue-color), 8%, 65%);
+}
 
-/* Active Modal */
+.skills__arrow{
+    margin-left: auto;
+    transition: 0.4s;
+}
 
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
 
-/*==================== PORTFOLIO ====================*/
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 
+}
 
-/*==================== PROJECT IN MIND ====================*/
+.skills__name{
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+}
+.skills__bar{
+    background-color: hsl(var(--hue-color), 92%, 85%);
+}
 
+.skills__percentage{
+    display: block;
+    background-color: hsl(var(--hue-color), 69%, 61%);
+}
 
-/*==================== TESTIMONIAL ====================*/
+.skills_python{
+    width: 95%;
+}
 
+.skills_machine_learning{
+    width: 100%;
+}
 
-/*==================== CONTACT ME ====================*/
+.skills_deep_learning{
+    width: 90%;
+}
 
+.skills_dv{
+    width: 80%;
+}
+.skills_math{
+    width: 95%;
+}
+.skills_sql{
+    width: 90%;
+}
+.skills_c{
+    width: 75%;
+}
+.skills_java{
+    width: 70%;
+}
+.skills_swift{
+    width: 90%;
+}
+.skills_ui{
+    width: 75%;
+}
 
-/*==================== FOOTER ====================*/
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
 
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
 
-/*========== SCROLL UP ==========*/
+.skills__open .skills__arrow{
+    transform: rotate(-180deg)
+}
 
+.qualification__tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
 
-/* Show scroll */
+.qualification__button{
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
 
+.qualification__button:hover{
+    color: hsl(var(--hue-color), 69%, 61%);
+}
 
-/*========== SCROLL BAR ==========*/
+.qualification__icon{
+    font-size: 1.8rem;
+    margin-right: 0.25rem;
+}
 
+.qualification__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem
+}
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+.qualification__title{
+    font-size: 0.938rem;
+    font-weight: 500;
+}
 
+.qualification__subtitle{
+    display: inline-block;
+    font-size: 0.813rem;
+    margin-bottom: 1rem;
+}
 
-/* For medium devices */
+.qualification__calendar{
+    font-size: 0.813rem;
+    color: hsl(var(--hue-color), 8%, 65%);
+}
 
+.qualification__rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: hsl(var(--hue-color), 69%, 61%);
+    border-radius: 50%;
+}
 
-/* For large devices */
+.qualification__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: hsl(var(--hue-color), 69%, 61%);
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualification__active[data-content]{
+    display: block;
+}
+
+.qualification__button.qualification__active{
+    color: hsl(var(--hue-color), 69%, 61%);
+}
+.contact__container{
+    margin-left: 10rem;
+}
+.contact__information{
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+.contact__icon{
+    font-size: 2rem;
+    color: hsl(var(--hue-color), 69%, 61%);
+    margin-right: 0.75rem;
+}
+
+.contact__title{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.contact__subtitle{
+    font-size: 0.813rem;
+    color: hsl(var(--hue-color), 8%, 65%);
+}
+.img__stock{
+    padding: 1rem;
+}
+
+.project__name{
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 568px){
+    .home__content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
+    .home__data{
+        grid-column: initial;
+    }
+    .home__img{
+        order: 1;
+        justify-self: center;
+    }
+    .skills__container,
+    .contact__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__sections,
+    .about__container{
+        display: grid;
+        grid-template-columns: .9fr;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+
+    .section__subtitle{
+        margin-bottom: 4rem;
+    }
+
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+
+    .header,
+    .main{
+        padding: 0 1rem;
+    }
+
+    .nav{
+        height: 4.5rem;
+        column-gap: 1rem;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .nav__menu{
+        margin-left: auto;
+    }
+
+    .home__container{
+        row-gap: 5rem;
+    }
+
+    .home__content{
+        padding-top: 5.5rem;
+        column-gap: 2rem
+    }
+    .home__blob-img{
+        width: 400px;
+    }
+
+    .about__description{
+        text-align: initial;
+    }
+
+    .about__info{
+        justify-content: space-between;
+    }
+
+    .about__buttons{
+        justify-content: initial;
+    }
+
+    .qualification__tabs{
+        justify-content: center;
+    }
+
+    .qualification__button{
+        margin: 0 1rem;
+    }
+
+    .qualification__sections{
+        grid-template-columns: 0.5fr;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .header,
+    .main{
+        padding: 0;
+    }
+
+    .home__social{
+        transform: translateX(-6rem);
+    }
+}
