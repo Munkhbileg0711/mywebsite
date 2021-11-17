@@ -473,7 +473,7 @@ img{
     color: hsl(var(--hue-color), 69%, 61%);
 }
 .contact__container{
-    margin-left: 6rem;
+    margin-left: 2rem;
 }
 .contact__information{
     display: flex;
