@@ -17,7 +17,7 @@ html{
 body{
     margin: 0 0 3rem 0;
     font-family:  "Poppins", sans-serif;
-    font-size: 0.938rem;
+    font-size: 0.9rem;
     background-color: hsl(var(--hue-color), 65%, 95%);
     color: hsl(var(--hue-color), 8%, 15%);
 }
@@ -50,7 +50,7 @@ img{
 
 .section__subtitle{
     display: block;
-    font-size: 0.813rem;
+    font-size: 0.8rem;
     margin-bottom: 3rem;
 }
 
@@ -128,7 +128,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.813rem;
+    font-size: 0.8rem;
     color: hsl(var(--hue-color), 8%, 15%);
     font-weight: 500;
 }
@@ -206,34 +206,6 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll{
-    display: none;
-}
-
-.home__scroll-button{
-    color: hsl(var(--hue-color), 8%, 45%);
-    transition: .3s;
-}
-
-.home__scroll-button:hover{
-    transform: translateY(0.25rem);
-}
-
-.home__scroll-mouse{
-    font-size: 2rem;
-}
-
-.home__scroll-name{
-    font-size: 0.813rem;
-    color: hsl(var(--hue-color), 8%, 45%);
-    font-weight: 500;
-    margin-right: 0.25rem;
-
-}
-
-.home__scroll-arrow{
-    font-size: 1.25rem;
-}
 
 .button{
     display: inline-block;
@@ -315,7 +287,7 @@ img{
     font-size: 1.125rem;
 }
 .skills__subtitle{
-    font-size: 0.813rem;
+    font-size: 0.8rem;
     color: hsl(var(--hue-color), 8%, 65%);
 }
 
@@ -337,7 +309,7 @@ img{
 }
 
 .skills__name{
-    font-size: 0.938rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 .skills__bar,
@@ -430,18 +402,18 @@ img{
 }
 
 .qualification__title{
-    font-size: 0.938rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
 .qualification__subtitle{
     display: inline-block;
-    font-size: 0.813rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
 .qualification__calendar{
-    font-size: 0.813rem;
+    font-size: 0.8rem;
     color: hsl(var(--hue-color), 8%, 65%);
 }
 
@@ -496,7 +468,7 @@ img{
 }
 
 .contact__subtitle{
-    font-size: 0.813rem;
+    font-size: 0.8rem;
     color: hsl(var(--hue-color), 8%, 65%);
 }
 .img__stock{
